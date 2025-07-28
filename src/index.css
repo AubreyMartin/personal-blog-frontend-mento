@@ -377,6 +377,11 @@ button:focus-visible {
   text-align: left;
 }
 
+/* About page specific width */
+.about-page-container {
+  max-width: 600px !important;
+}
+
 .page-container h1 {
   color: var(--text-primary);
   margin-bottom: 1rem;
@@ -385,6 +390,34 @@ button:focus-visible {
 .page-container p {
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.page-container h3 {
+  color: var(--text-primary);
+  font-size: 1.5em;
+  margin: 30px 0 15px 0;
+}
+
+.page-container h4 {
+  color: var(--text-primary);
+  font-size: 1.3em;
+  margin: 25px 0 15px 0;
+}
+
+.page-container ul {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.page-container li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.page-container strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 /* ========== Home Page ========== */
@@ -529,7 +562,7 @@ button:focus-visible {
 /* ========== About Page ========== */
 .about-page {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -556,12 +589,15 @@ button:focus-visible {
 }
 
 .about-page .about-content p {
+  max-width: 600px;
   color: var(--text-secondary);
   margin-bottom: 20px;
 }
 
-.about-page .skills-section {
+.about-page-container .skills-section {
+  max-width: 600px;
   margin-top: 30px;
+  color: var(--text-primary);
 }
 
 .about-page .skills-grid {
@@ -569,6 +605,7 @@ button:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   margin-top: 20px;
+  color: var(--text-primary);
 }
 
 .about-page .skill-item {
@@ -576,10 +613,19 @@ button:focus-visible {
   padding: 12px 16px;
   border-radius: 8px;
   text-align: center;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
+.workspace-image {
+  width: 100%;
+  max-height: 368px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 0px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  object-fit: cover;
+}
 /* ========== Newsletter Page ========== */
 .newsletter-page {
   width: 100%;

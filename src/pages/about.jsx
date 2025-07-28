@@ -4,7 +4,7 @@ import SocialButtons from "../components/social";
 import workspaceImage from "../assets/images/image-workspace-large.jpg";
 
 const About = () => (
-  <main className="page-container">
+  <main className="page-container about-page-container">
     <h1>About</h1>
     <p>
       Hi, I’m Paulina! Ever since I can remember, I’ve had a passion for
@@ -51,7 +51,7 @@ const About = () => (
       I absolutely love my workspace as a place that inspires me to do my best
       work, so I thought I’d share it with you:
     </p>
-    <img src={workspaceImage} alt="workspace" />
+    <img className="workspace-image" src={workspaceImage} alt="workspace" />
     <p>
       I hope this blog not only documents my growth but also helps others see
       that coding can be for everyone. Thanks for joining me on this journey!
