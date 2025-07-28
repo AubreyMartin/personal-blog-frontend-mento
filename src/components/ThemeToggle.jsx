@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTheme } from "../context/ThemeContext";
 import sunImg from "../assets/images/icon-sun.svg";
 import moonImg from "../assets/images/icon-moon.svg";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setDarkMode((prev) => !prev);
-    // You can add logic here to actually change the theme
-  };
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <button
@@ -16,14 +12,10 @@ const ThemeToggle = () => {
       className="theme-toggle"
       aria-label="Toggle dark/light mode"
     >
-      {darkMode ? (
-        <span role="img" aria-label="Moon">
-          <img src={moonImg} alt="Moon" />
-        </span>
+      {isDarkMode ? (
+        <img src={sunImg} alt="Switch to light mode" />
       ) : (
-        <span role="img" aria-label="Sun">
-          <img src={sunImg} alt="Sun" />
-        </span>
+        <img src={moonImg} alt="Switch to dark mode" />
       )}
     </button>
   );
