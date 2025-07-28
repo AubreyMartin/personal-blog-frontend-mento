@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Article from "./pages/Article";
 import Blog from "./pages/Blog";
 import Newsletter from "./pages/Newsletter";
-import About from "./pages/About";
+import About from "./pages/about";
 function App() {
   return (
     <BrowserRouter>
