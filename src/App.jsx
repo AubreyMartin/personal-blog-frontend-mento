@@ -17,7 +17,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/newsletter" element={<Newsletter />} />
-          <Route path="/article" element={<Article />} />
+          <Route path="/article/:slug" element={<Article />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
