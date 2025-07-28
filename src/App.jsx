@@ -3,9 +3,8 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Article from "./pages/Article";
 import Blog from "./pages/Blog";
-import About from "./pages/About";
 import Newsletter from "./pages/Newsletter";
-
+import About from "./pages/About";
 function App() {
   return (
     <BrowserRouter>
